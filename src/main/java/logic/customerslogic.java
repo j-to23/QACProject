@@ -11,11 +11,11 @@ import org.apache.log4j.Logger;
 import util.utils;
 
 public class customerslogic implements crud {
-	
+
 	private static final Logger log = Logger.getLogger(customerslogic.class);
 
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://"+utils.MYSQL_URL+"/invmsdb?useSSL=false";
+	static final String DB_URL = "jdbc:mysql://" + utils.MYSQL_URL + "/invmsdb?useSSL=false";
 	static final String USER = utils.getUser();
 	static final String PASS = utils.getPass();
 
@@ -89,6 +89,7 @@ public class customerslogic implements crud {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.printf("%-10s %-30s %-30s %-30s %-30s\n", "customerID", "fullname", "address", "postcode", "email");
 		try {
 			while (rs.next()) {
 				int customerID = rs.getInt("customerID");
@@ -96,7 +97,7 @@ public class customerslogic implements crud {
 				String pw = rs.getString("address");
 				String postcode = rs.getString("postcode");
 				String email = rs.getString("email");
-				System.out.printf("%-5s %-30s %-30s %-30s %-30s\n",customerID, fullname, pw, postcode, email);
+				System.out.printf("%-10s %-30s %-30s %-30s %-30s\n", customerID, fullname, pw, postcode, email);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -119,7 +120,7 @@ public class customerslogic implements crud {
 	}
 
 	@Override
-	public void delete(String  id) {
+	public void delete(String id) {
 		log.info("Deleting " + id + " from customers...");
 		String delete = "DELETE FROM customers WHERE customerID = " + id;
 		try {

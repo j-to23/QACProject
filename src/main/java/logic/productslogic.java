@@ -11,11 +11,11 @@ import org.apache.log4j.Logger;
 import util.utils;
 
 public class productslogic implements crud {
-	
+
 	public static final Logger log = Logger.getLogger(productslogic.class);
-	
+
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://"+utils.MYSQL_URL+"/invmsdb?useSSL=false";
+	static final String DB_URL = "jdbc:mysql://" + utils.MYSQL_URL + "/invmsdb?useSSL=false";
 	static final String USER = utils.getUser();
 	static final String PASS = utils.getPass();
 
@@ -47,8 +47,7 @@ public class productslogic implements crud {
 	}
 
 	public void create(String productname, String price, String stock) {
-		String update = "INSERT INTO products Values(0,'" + productname + "','" + price + "','" + stock
-				+"');";
+		String update = "INSERT INTO products Values(0,'" + productname + "','" + price + "','" + stock + "');";
 		try {
 			stmt.executeUpdate(update);
 			log.info("Product added");
@@ -56,8 +55,7 @@ public class productslogic implements crud {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
+
 	}
 
 	@Override
@@ -70,21 +68,21 @@ public class productslogic implements crud {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		System.out.printf("%-20s %-30s %-10s %-10s\n", "productID", "productname", "price (£)", "stock");
 		try {
 			while (rs.next()) {
 				int productID = rs.getInt("productID");
 				String productname = rs.getString("productname");
 				double price = rs.getDouble("price");
 				int stock = rs.getInt("stock");
-				System.out.printf("%-5s %-30s %-10s %-10s\n",productID, productname, "£"+price, stock);
+				System.out.printf("%-20s %-30s %-10s %-10s\n", productID, productname, price, stock);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-	}
 
+	}
 
 	@Override
 	public void update(String set, String setto, String whereis) {

@@ -51,15 +51,13 @@ public class orderlinelogic implements crud {
 			e.printStackTrace();
 		}
 	}
-	
-	
-	
+
 	// create statement
 	public void create(String orderID, String productID, String quantity) {
-		//string statements to get price of individual item
-		String read = "SELECT price from invmsdb.products WHERE productID = "+ productID;
-		//string statement to get previous total cost of order being added to
-		String read2 = "SELECT totalcost from invmsdb.orders WHERE orderID = "+ orderID;		
+		// string statements to get price of individual item
+		String read = "SELECT price from invmsdb.products WHERE productID = " + productID;
+		// string statement to get previous total cost of order being added to
+		String read2 = "SELECT totalcost from invmsdb.orders WHERE orderID = " + orderID;
 		double total = 0;
 		double totalcostorders = 0;
 
@@ -72,13 +70,13 @@ public class orderlinelogic implements crud {
 		}
 		try {
 			while (rs.next()) {
-				//total is the quantity of items multiplied by individual price
-				total = rs.getDouble("price")*Double.parseDouble(quantity);
+				// total is the quantity of items multiplied by individual price
+				total = rs.getDouble("price") * Double.parseDouble(quantity);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+
 		rs = null;
 		try {
 			rs = stmt.executeQuery(read2);
@@ -87,18 +85,20 @@ public class orderlinelogic implements crud {
 		}
 		try {
 			while (rs.next()) {
-				//get previous total cost or order
+				// get previous total cost or order
 				totalcostorders = rs.getDouble("totalcost");
-				log.info("previous order total: "+totalcostorders);
+				log.info("previous order total: " + totalcostorders);
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		// adds new row to orderline table
-		String update = "INSERT INTO orderline Values(0," + orderID + "," + productID + "," + quantity + "," + total + ")";
+		String update = "INSERT INTO orderline Values(0," + orderID + "," + productID + "," + quantity + "," + total
+				+ ")";
 		// updates associated order row to new orderline
-		String update2 = "UPDATE orders SET totalcost = " + (total+totalcostorders) + " WHERE orderID = '" + orderID + "'";
-		
+		String update2 = "UPDATE orders SET totalcost = " + (total + totalcostorders) + " WHERE orderID = '" + orderID
+				+ "'";
+
 		try {
 			stmt.executeUpdate(update);
 		} catch (SQLException e) {
@@ -111,7 +111,7 @@ public class orderlinelogic implements crud {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		read = "SELECT orderlineID from invmsdb.orderline order by orderlineID desc limit 1";
 		rs = null;
 		int ID = 0;
@@ -128,7 +128,7 @@ public class orderlinelogic implements crud {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		log.info("Item added at orderline: " + ID +", for order ID: "+ orderID);
+		log.info("Item added at orderline: " + ID + ", for order ID: " + orderID);
 	}
 
 	@Override
@@ -140,6 +140,8 @@ public class orderlinelogic implements crud {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		System.out.printf("%-12s %-10s %-10s %-10s %-10s\n", "orderlineID", "orderID", "productID", "quantity",
+				"cost (£)");
 		try {
 			while (rs.next()) {
 				int orderlineID = rs.getInt("orderlineID");
@@ -147,7 +149,7 @@ public class orderlinelogic implements crud {
 				int productID = rs.getInt("productID");
 				int quantity = rs.getInt("quantity");
 				double cost = rs.getDouble("cost");
-				System.out.printf("%-5s %-5s %-5s %-5s %-30s\n",orderlineID, orderID, productID, quantity, cost);
+				System.out.printf("%-12s %-10s %-10s %-10s %-100s\n", orderlineID, orderID, productID, quantity, cost);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -166,12 +168,13 @@ public class orderlinelogic implements crud {
 		} catch (SQLException e) {
 			log.info("failure to launch");
 			e.printStackTrace();
-		}	}
+		}
+	}
 
 	@Override
 	public void delete(String id) {
 		log.info("Updating linked order");
-		String read = "SELECT cost,orderID from invmsdb.orderline where orderlineID ="+id;
+		String read = "SELECT cost,orderID from invmsdb.orderline where orderlineID =" + id;
 		String update = "";
 		ResultSet rs = null;
 		try {
@@ -182,7 +185,7 @@ public class orderlinelogic implements crud {
 		try {
 			while (rs.next()) {
 				double cost = rs.getDouble("cost");
-				int orderID = rs.getInt("orderID");				
+				int orderID = rs.getInt("orderID");
 				update = "UPDATE orders SET totalcost = totalcost - " + cost + " WHERE orderID = '" + orderID + "'";
 			}
 		} catch (SQLException e) {

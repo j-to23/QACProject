@@ -82,18 +82,19 @@ public class orderslogic implements crud {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		System.out.printf("%-10s %-10s %-10s\n", "orderID", "customerID", "total (£)");
 		try {
 			while (rs.next()) {
 				int orderID = rs.getInt("orderID");
 				int customerID = rs.getInt("customerID");
 				double total = rs.getDouble("totalcost");
-				System.out.printf("%-5s %-5s %-10s\n",orderID, customerID, total);
+				System.out.printf("%-10s %-10s %-10s\n", orderID, customerID, total);
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	@Override

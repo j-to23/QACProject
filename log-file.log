@@ -69,3 +69,194 @@ Anything else (y/n)?
 2020-04-30 11:37:07 INFO  ims:44 - 
 
 2020-04-30 11:37:07 INFO  ims:50 - Program closed
+2020-04-30 13:17:06 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 13:17:06 INFO  daos:17 - Database username: 
+2020-04-30 13:17:08 INFO  daos:22 - Database password
+2020-04-30 13:17:10 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:17:10 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:17:10 INFO  customerslogic:21 - Customer's full name: 
+2020-04-30 13:17:16 INFO  customerslogic:24 - First line of address: 
+2020-04-30 13:17:21 INFO  customerslogic:27 - Customer's postcode: 
+2020-04-30 13:17:24 INFO  customerslogic:30 - Customer's email: 
+2020-04-30 13:17:34 INFO  customerslogic:78 - Customer added at customerID: 11
+2020-04-30 13:17:34 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:17:41 INFO  ims:44 - 
+
+2020-04-30 13:17:42 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:17:42 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:17:42 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:17:44 INFO  ims:44 - 
+
+2020-04-30 13:17:48 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:17:48 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:17:48 INFO  customerslogic:44 - Which customer to edit by ID: 
+2020-04-30 13:17:49 INFO  customerslogic:47 - Column to change (customername, address, postcode, email): 
+2020-04-30 13:17:54 INFO  customerslogic:50 - Change value to: 
+2020-04-30 13:18:03 INFO  customerslogic:108 - Updating statement
+2020-04-30 13:18:03 INFO  customerslogic:113 - updated
+2020-04-30 13:18:03 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:04 INFO  ims:44 - 
+
+2020-04-30 13:18:05 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:18:05 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:18:05 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:08 INFO  ims:44 - 
+
+2020-04-30 13:18:11 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:18:11 INFO  productslogic:40 - Connected!!
+2020-04-30 13:18:11 INFO  products:19 - Product name: 
+2020-04-30 13:18:16 INFO  products:22 - Product price (eg. 20.99 or 21):  
+2020-04-30 13:18:21 INFO  products:25 - Product stock: 
+2020-04-30 13:18:22 INFO  productslogic:54 - Product added
+2020-04-30 13:18:22 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:24 INFO  ims:44 - 
+
+2020-04-30 13:18:25 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:18:25 INFO  productslogic:40 - Connected!!
+2020-04-30 13:18:25 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:33 INFO  ims:44 - 
+
+2020-04-30 13:18:36 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:18:36 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:18:36 INFO  customerslogic:58 - Which customer ID to delete?
+2020-04-30 13:18:37 INFO  customerslogic:123 - Deleting 11 from customers...
+2020-04-30 13:18:37 INFO  customerslogic:127 - Records deleted
+2020-04-30 13:18:37 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:39 INFO  ims:44 - 
+
+2020-04-30 13:18:40 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:18:40 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:18:40 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:42 INFO  ims:44 - 
+
+2020-04-30 13:18:45 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:18:45 INFO  productslogic:40 - Connected!!
+2020-04-30 13:18:45 INFO  products:36 - Product by ID to update: 
+2020-04-30 13:18:47 INFO  products:39 - Column to change (productname, price, stock): 
+2020-04-30 13:18:50 INFO  products:42 - Change value to: 
+2020-04-30 13:18:51 INFO  productslogic:91 - Updating statement
+2020-04-30 13:18:51 INFO  productslogic:96 - updated
+2020-04-30 13:18:51 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:52 INFO  ims:44 - 
+
+2020-04-30 13:18:54 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:18:54 INFO  productslogic:40 - Connected!!
+2020-04-30 13:18:54 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:18:57 INFO  ims:44 - 
+
+2020-04-30 13:19:02 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:19:02 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:19:02 INFO  customerslogic:58 - Which customer ID to delete?
+2020-04-30 13:19:03 INFO  customerslogic:123 - Deleting 11 from customers...
+2020-04-30 13:19:03 INFO  customerslogic:127 - Records deleted
+2020-04-30 13:19:03 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:19:06 INFO  ims:44 - 
+
+2020-04-30 13:19:08 INFO  orders:20 - Customer ID for order: 
+2020-04-30 13:19:11 INFO  orderslogic:50 - INSERT INTO orders Values(0,10,0)
+2020-04-30 13:19:11 INFO  orderslogic:73 - Order created, to add items, please create orderlines at orderID: 6
+2020-04-30 13:19:11 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:19:17 INFO  ims:44 - 
+
+2020-04-30 13:19:19 INFO  orderline:20 - Order ID to add item to: 
+2020-04-30 13:19:22 INFO  orderline:22 - Product ID of item to add: 
+2020-04-30 13:19:27 INFO  orderline:24 - Quantity of item to add: 
+2020-04-30 13:19:30 INFO  orderlinelogic:92 - previous order total: 0.0
+2020-04-30 13:19:30 INFO  orderlinelogic:131 - Item added at orderline: 7, for order ID: 6
+2020-04-30 13:19:30 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:19:31 INFO  ims:44 - 
+
+2020-04-30 13:19:34 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:19:42 INFO  ims:44 - 
+
+2020-04-30 13:19:47 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:19:58 INFO  ims:44 - 
+
+2020-04-30 13:19:58 INFO  ims:50 - Program closed
+2020-04-30 13:21:18 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 13:21:18 INFO  daos:17 - Database username: 
+2020-04-30 13:21:23 INFO  daos:22 - Database password
+2020-04-30 13:21:26 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:21:26 INFO  productslogic:40 - Connected!!
+2020-04-30 13:21:26 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:21:37 INFO  ims:44 - 
+
+2020-04-30 13:21:37 INFO  ims:50 - Program closed
+2020-04-30 13:21:40 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 13:21:40 INFO  daos:17 - Database username: 
+2020-04-30 13:21:41 INFO  daos:22 - Database password
+2020-04-30 13:21:44 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:21:44 INFO  productslogic:40 - Connected!!
+2020-04-30 13:21:44 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:25:46 INFO  ims:44 - 
+
+2020-04-30 13:25:46 INFO  ims:50 - Program closed
+2020-04-30 13:25:49 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 13:25:49 INFO  daos:17 - Database username: 
+2020-04-30 13:25:50 INFO  daos:22 - Database password
+2020-04-30 13:25:53 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 13:25:53 INFO  customerslogic:40 - Connected!!
+2020-04-30 13:25:53 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:26:00 INFO  ims:44 - 
+
+2020-04-30 13:26:02 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:26:02 INFO  productslogic:40 - Connected!!
+2020-04-30 13:26:02 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:26:04 INFO  ims:44 - 
+
+2020-04-30 13:26:06 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:26:10 INFO  ims:44 - 
+
+2020-04-30 13:26:14 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:27:08 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 13:27:08 INFO  daos:17 - Database username: 
+2020-04-30 13:27:11 INFO  daos:22 - Database password
+2020-04-30 13:27:17 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:27:21 INFO  ims:44 - 
+
+2020-04-30 13:27:23 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:28:04 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 13:28:04 INFO  daos:17 - Database username: 
+2020-04-30 13:28:05 INFO  daos:22 - Database password
+2020-04-30 13:28:08 INFO  productslogic:32 - Starting connection to db
+2020-04-30 13:28:09 INFO  productslogic:40 - Connected!!
+2020-04-30 13:28:09 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 13:28:22 INFO  ims:44 - 
+
+2020-04-30 13:28:22 INFO  ims:50 - Program closed
