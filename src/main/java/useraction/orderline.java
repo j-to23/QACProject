@@ -33,11 +33,17 @@ public class orderline implements tableinputs {
 
 	@Override
 	public void update() {
-		String set = "";
-		String setto = "";
-		String where = "";
-		String whereis = "";
-		oll.update(set, setto, where, whereis);
+		
+		log.info("Which orderline to update by ID: ");
+		String whereis = getinput();
+
+		log.info("Column to change (orderID, productID, quantity, cost): ");
+		String set = getinput();
+
+		log.info("Change value to: ");
+		String setto = getinput();
+
+		oll.update(set, setto, whereis);
 	}
 
 	@Override

@@ -87,10 +87,10 @@ public class productslogic implements crud {
 
 
 	@Override
-	public void update(String set, String setto, String where, String whereis) {
+	public void update(String set, String setto, String whereis) {
 		log.info("Updating statement");
 
-		String update = "UPDATE products SET " + set + " = '" + setto + "' WHERE " + where + " = '" + whereis + "'";
+		String update = "UPDATE products SET " + set + " = '" + setto + "' WHERE productID = '" + whereis + "'";
 		try {
 			stmt.executeUpdate(update);
 			log.info("updated");

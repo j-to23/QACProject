@@ -156,9 +156,17 @@ public class orderlinelogic implements crud {
 	}
 
 	@Override
-	public void update(String set, String setto, String where, String whereis) {
-		log.info("Please use delete functionality to update orderlines for orders");
-	}
+	public void update(String set, String setto, String whereis) {
+		log.info("Updating orderline...");
+
+		String update = "UPDATE orderline SET " + set + " = '" + setto + "' WHERE orderlineID = '" + whereis + "'";
+		try {
+			stmt.executeUpdate(update);
+			log.info("updated");
+		} catch (SQLException e) {
+			log.info("failure to launch");
+			e.printStackTrace();
+		}	}
 
 	@Override
 	public void delete(String id) {

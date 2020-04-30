@@ -97,10 +97,10 @@ public class orderslogic implements crud {
 	}
 
 	@Override
-	public void update(String set, String setto, String where, String whereis) {
+	public void update(String set, String setto, String whereis) {
 		log.info("Updating order...");
 
-		String update = "UPDATE orders SET " + set + " = '" + setto + "' WHERE " + where + " = '" + whereis + "'";
+		String update = "UPDATE orders SET " + set + " = '" + setto + "' WHERE orderID = '" + whereis + "'";
 		try {
 			stmt.executeUpdate(update);
 			log.info("updated");

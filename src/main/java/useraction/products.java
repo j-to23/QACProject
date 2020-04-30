@@ -36,18 +36,16 @@ public class products implements tableinputs  {
 
 	@Override
 	public void update() {
-		log.info("Column to set: ");
+		log.info("Product by ID to update: ");
+		String whereis = getinput();
+
+		log.info("Column to change (productname, price, stock): ");
 		String set = getinput();
 
-		log.info("set values to: ");
+		log.info("Change value to: ");
 		String setto = getinput();
 
-		log.info("where: ");
-		String where = getinput();
-
-		log.info("is equal to: ");
-		String whereis = getinput();
-		pl.update(set, setto, where, whereis);
+		pl.update(set, setto, whereis);
 	}
 
 	public void delete() {

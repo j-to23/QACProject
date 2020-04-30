@@ -29,18 +29,17 @@ public class orders implements tableinputs  {
 
 	@Override
 	public void update() {
-		log.info("Column to set: ");
+		
+		log.info("Which order to update by ID: ");
+		String whereis = getinput();
+
+		log.info("Column to change (customerID, totalcost): ");
 		String set = getinput();
 
-		log.info("set values to: ");
+		log.info("Change value to: ");
 		String setto = getinput();
 
-		log.info("where: ");
-		String where = getinput();
-
-		log.info("is equal to: ");
-		String whereis = getinput();
-		osl.update(set, setto, where, whereis);
+		osl.update(set, setto, whereis);
 	}
 
 	@Override

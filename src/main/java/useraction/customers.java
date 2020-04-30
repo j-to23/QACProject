@@ -41,19 +41,16 @@ public class customers implements tableinputs {
 
 	@Override
 	public void update() {
-		// TODO Auto-generated method stub
-		log.info("column to set: ");
+		log.info("Which customer to edit by ID: ");
+		String whereis = getinput();
+		
+		log.info("Column to change (customername, address, postcode, email): ");
 		String set = getinput();
 
-		log.info("set values to: ");
+		log.info("Change value to: ");
 		String setto = getinput();
 
-		log.info("where: ");
-		String where = getinput();
-
-		log.info("is equal to: ");
-		String whereis = getinput();
-		cl.update(set, setto, where, whereis);
+		cl.update(set, setto, whereis);
 	}
 
 	@Override
