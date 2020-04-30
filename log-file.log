@@ -1,0 +1,71 @@
+2020-04-30 09:37:09 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 09:37:09 INFO  daos:17 - Database username: 
+2020-04-30 09:37:20 INFO  daos:22 - Database password
+2020-04-30 09:37:23 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 09:37:23 INFO  customerslogic:40 - Connected!!
+2020-04-30 09:37:42 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 09:37:42 INFO  daos:17 - Database username: 
+2020-04-30 09:37:44 INFO  daos:22 - Database password
+2020-04-30 09:37:49 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 09:37:49 INFO  customerslogic:40 - Connected!!
+2020-04-30 09:37:49 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 09:37:51 INFO  ims:44 - 
+
+2020-04-30 09:37:51 INFO  ims:50 - Program closed
+2020-04-30 09:52:29 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 09:52:29 INFO  daos:17 - Database username: 
+2020-04-30 09:52:34 INFO  daos:22 - Database password
+2020-04-30 09:52:38 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 09:52:38 INFO  customerslogic:40 - Connected!!
+2020-04-30 09:52:38 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 09:52:40 INFO  ims:44 - 
+
+2020-04-30 09:52:40 INFO  ims:50 - Program closed
+2020-04-30 10:03:03 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 10:03:03 INFO  daos:17 - Database username: 
+2020-04-30 10:03:06 INFO  daos:22 - Database password
+2020-04-30 10:03:08 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 10:03:09 INFO  customerslogic:40 - Connected!!
+2020-04-30 10:03:09 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 10:03:11 INFO  ims:44 - 
+
+2020-04-30 10:03:11 INFO  ims:50 - Program closed
+2020-04-30 10:04:44 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 10:04:44 INFO  daos:17 - Database username: 
+2020-04-30 10:04:47 INFO  daos:22 - Database password
+2020-04-30 10:04:51 INFO  productslogic:32 - Starting connection to db
+2020-04-30 10:04:51 INFO  productslogic:40 - Connected!!
+2020-04-30 10:04:51 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 10:04:52 INFO  ims:44 - 
+
+2020-04-30 10:04:52 INFO  ims:50 - Program closed
+2020-04-30 10:05:11 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 10:05:11 INFO  daos:17 - Database username: 
+2020-04-30 11:36:49 INFO  ims:26 - Welcome to your inventory management system!
+
+
+2020-04-30 11:36:49 INFO  daos:17 - Database username: 
+2020-04-30 11:36:52 INFO  daos:22 - Database password
+2020-04-30 11:36:58 INFO  customerslogic:32 - Starting connection to db
+2020-04-30 11:37:00 INFO  customerslogic:40 - Connected!!
+2020-04-30 11:37:00 INFO  ims:42 - 
+Anything else (y/n)?
+2020-04-30 11:37:07 INFO  ims:44 - 
+
+2020-04-30 11:37:07 INFO  ims:50 - Program closed

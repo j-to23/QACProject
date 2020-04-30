@@ -15,7 +15,6 @@ public class products implements tableinputs  {
 	
 	productslogic pl = new productslogic();
 	
-	@Override
 	public void create() {
 		log.info("Product name: ");
 		String productname = getinput();
@@ -29,12 +28,10 @@ public class products implements tableinputs  {
 		pl.create(productname, price, stock);
 	}
 
-	@Override
 	public void read() {
 		pl.read();
 	}
 
-	@Override
 	public void update() {
 		log.info("Product by ID to update: ");
 		String whereis = getinput();
