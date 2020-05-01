@@ -329,3 +329,17 @@ Anything else (y/n)?
 
 
 2020-05-01 06:27:50 INFO  daos:13 - Database username: 
+2020-05-01 08:02:00 INFO  ims:21 - Welcome to your inventory management system!
+
+
+2020-05-01 08:02:00 INFO  daos:13 - Database username: 
+2020-05-01 08:02:03 INFO  daos:19 - Database password
+2020-05-01 08:02:10 INFO  productslogic:32 - Starting connection to db
+2020-05-01 08:02:10 INFO  productslogic:40 - Connected!!
+2020-05-01 08:02:10 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:02:44 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:02:51 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:03:24 INFO  ims:45 - Program closed

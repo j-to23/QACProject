@@ -12,3 +12,4 @@ Creating or deleting orderlines will automatically add or subtract the cost of t
 
 Deleting orders will also remove all attached orderlines.
 
+IP:port is hardcoded in to the utils.class line 9 as a String, If changes are needed, please change it here and rebuild the jar file.
