@@ -3,9 +3,12 @@ package util;
 import java.util.Scanner;
 
 public class utils {
-	public static final String MYSQL_URL = "localhost:3306";
 	public static final Scanner sc = new Scanner(System.in);
-	
+	//Database constants
+	public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
+	public static final String MYSQL_URL = "10.76.64.3:8081";
+	public static final String DB_NAME = "invmsdb";
+	public static final String DB_URL = "jdbc:mysql://" + MYSQL_URL + "/" + DB_NAME + "?useSSL=false";
 	static String USER = "";
 	static String PASS = "";
 	
@@ -13,16 +16,18 @@ public class utils {
 		return USER;
 	}
 
-	public static void setUser(String user) {
+	public static String setUser(String user) {
 		USER = user;
+		return USER;
 	}
 
 	public static String getPass() {
 		return PASS;
 	}
 
-	public static void setPass(String pass) {
+	public static String setPass(String pass) {
 		PASS = pass;
+		return PASS;
 	}
 
 	public utils() {

@@ -2,16 +2,11 @@ package Inventory_management;
 
 import org.apache.log4j.Logger;
 
-import logic.daos;
 import useraction.operator;
 import useraction.table;
 import util.utils;
 
 public class ims {
-
-	static String getinput() {
-		return utils.getinput();
-	}
 
 	private static final Logger log = Logger.getLogger(ims.class);
 
@@ -40,8 +35,8 @@ public class ims {
 			swc.swcase(table, operator);
 
 			log.info("\nAnything else (y/n)?");
-			closecheck = getinput();
-			log.info("\n");
+			closecheck = utils.getinput();
+			
 			if (closecheck.equals("n") || closecheck.equals("N")) {
 				programclose = false;
 			}
@@ -50,4 +45,6 @@ public class ims {
 		log.info("Program closed");
 
 	}
+	
+	
 }

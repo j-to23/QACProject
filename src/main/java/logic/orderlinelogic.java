@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
@@ -15,18 +14,13 @@ public class orderlinelogic implements crud {
 
 	public static final Logger log = Logger.getLogger(orderlinelogic.class);
 
-	static String getinput() {
-		return utils.getinput();
-	}
-
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://" + utils.MYSQL_URL + "/invmsdb?useSSL=false";
+	static final String JDBC_DRIVER = utils.JDBC_DRIVER;
+	static final String DB_URL = utils.DB_URL;
 	static final String USER = utils.getUser();
 	static final String PASS = utils.getPass();
-
+	
 	Connection conn = null;
 	Statement stmt = null;
-	Scanner sc = new Scanner(System.in);
 
 	public orderlinelogic() {
 		try {

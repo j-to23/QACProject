@@ -1,13 +1,16 @@
 package Inventory_management;
 
+
+
 import useraction.customers;
+
 import useraction.orderline;
 import useraction.orders;
 import useraction.products;
 
 public class switchcase {
 	
-	public void swcase(String table, String operation) {
+	public static void swcase(String table, String operation) {
 		switch (table) {
 		case "1":
 		case "customers":

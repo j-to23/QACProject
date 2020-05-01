@@ -8,7 +8,9 @@ import util.utils;
 public class customers implements tableinputs {
 	
 	private static final Logger log = Logger.getLogger(customerslogic.class);
-
+	
+	
+	
 	static String getinput() {
 		return utils.getinput();
 	}

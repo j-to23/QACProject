@@ -8,14 +8,16 @@ import java.sql.Statement;
 
 import org.apache.log4j.Logger;
 
+import util.utils;
+
 public class orderslogic implements crud {
 
 	public static final Logger log = Logger.getLogger(orderslogic.class);
 
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://localhost:3306/invmsdb?useSSL=false";
-	static final String USER = "root";
-	static final String PASS = "root";
+	static final String JDBC_DRIVER = utils.JDBC_DRIVER;
+	static final String DB_URL = utils.DB_URL;
+	static final String USER = utils.getUser();
+	static final String PASS = utils.getPass();
 
 	Connection conn = null;
 	Statement stmt = null;

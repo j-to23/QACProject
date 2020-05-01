@@ -14,8 +14,8 @@ public class customerslogic implements crud {
 
 	private static final Logger log = Logger.getLogger(customerslogic.class);
 
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://" + utils.MYSQL_URL + "/invmsdb?useSSL=false";
+	static final String JDBC_DRIVER = utils.JDBC_DRIVER;
+	static final String DB_URL = utils.DB_URL;
 	static final String USER = utils.getUser();
 	static final String PASS = utils.getPass();
 
@@ -47,7 +47,7 @@ public class customerslogic implements crud {
 
 	}
 
-	public void create(String fullname, String address, String postcode, String email) {
+	public String create(String fullname, String address, String postcode, String email) {
 
 		int customerID = 0;
 
@@ -76,7 +76,7 @@ public class customerslogic implements crud {
 			e.printStackTrace();
 		}
 		log.info("Customer added at customerID: " + customerID);
-
+		return update;
 	}
 
 	@Override
@@ -100,7 +100,6 @@ public class customerslogic implements crud {
 				System.out.printf("%-10s %-30s %-30s %-30s %-30s\n", customerID, fullname, pw, postcode, email);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

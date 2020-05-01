@@ -14,8 +14,8 @@ public class productslogic implements crud {
 
 	public static final Logger log = Logger.getLogger(productslogic.class);
 
-	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	static final String DB_URL = "jdbc:mysql://" + utils.MYSQL_URL + "/invmsdb?useSSL=false";
+	static final String JDBC_DRIVER = utils.JDBC_DRIVER;
+	static final String DB_URL = utils.DB_URL;
 	static final String USER = utils.getUser();
 	static final String PASS = utils.getPass();
 
@@ -46,7 +46,7 @@ public class productslogic implements crud {
 		}
 	}
 
-	public void create(String productname, String price, String stock) {
+	public String create(String productname, String price, String stock) {
 		String update = "INSERT INTO products Values(0,'" + productname + "','" + price + "','" + stock + "');";
 		try {
 			stmt.executeUpdate(update);
@@ -55,7 +55,7 @@ public class productslogic implements crud {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		return update;
 	}
 
 	@Override
@@ -81,7 +81,7 @@ public class productslogic implements crud {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
+		
 	}
 
 	@Override

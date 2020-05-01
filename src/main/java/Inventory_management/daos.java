@@ -1,4 +1,4 @@
-package logic;
+package Inventory_management;
 
 import org.apache.log4j.Logger;
 
@@ -8,18 +8,16 @@ public class daos {
 	
 	public static final Logger log = Logger.getLogger(daos.class);
 	
-	static String getinput() {
-		return utils.getinput();
-	}
-	
-	public static void userset() {
+	public static String userset() {
 		// table to edit check
 		log.info("Database username: ");
-		utils.setUser(getinput());
+		utils.setUser(utils.getinput());
+		return utils.getUser();
 	}
 	
-	public static void passset() {
+	public static String passset() {
 		log.info("Database password");
-		utils.setPass(getinput());
+		utils.setPass(utils.getinput());
+		return utils.getPass();
 	}
 }

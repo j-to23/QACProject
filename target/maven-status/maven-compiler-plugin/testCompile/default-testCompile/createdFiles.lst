@@ -1,14 +1,14 @@
 useraction\tableinputsTest.class
 useraction\tableTest.class
 Inventory_management\imsTest.class
+Inventory_management\daosTest.class
 logic\productslogicTest.class
 Inventory_management\runnerTest.class
-Inventory_management\switchcaseTest.class
 useraction\operatorTest.class
 logic\customerslogicTest.class
 useraction\customersTest.class
 useraction\ordersTest.class
-logic\daosTest.class
+util\utilsTest.class
 logic\orderslogicTest.class
 logic\orderlinelogicTest.class
 useraction\orderlineTest.class
