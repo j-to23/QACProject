@@ -343,3 +343,48 @@ Anything else (y/n)?
 2020-05-01 08:02:51 INFO  ims:37 - 
 Anything else (y/n)?
 2020-05-01 08:03:24 INFO  ims:45 - Program closed
+2020-05-01 08:40:53 INFO  ims:21 - Welcome to your inventory management system!
+
+
+2020-05-01 08:40:53 INFO  daos:13 - Database username: 
+2020-05-01 08:40:59 INFO  daos:19 - Database password
+2020-05-01 08:41:17 INFO  orders:20 - Customer ID for order: 
+2020-05-01 08:41:20 INFO  orderslogic:52 - INSERT INTO orders Values(0,1,0)
+2020-05-01 08:41:20 INFO  orderslogic:75 - Order created, to add items, please create orderlines at orderID: 1
+2020-05-01 08:41:20 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:41:23 INFO  orders:20 - Customer ID for order: 
+2020-05-01 08:41:24 INFO  orderslogic:52 - INSERT INTO orders Values(0,2,0)
+2020-05-01 08:41:24 INFO  orderslogic:75 - Order created, to add items, please create orderlines at orderID: 2
+2020-05-01 08:41:24 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:41:31 INFO  orders:20 - Customer ID for order: 
+2020-05-01 08:41:32 INFO  orderslogic:52 - INSERT INTO orders Values(0,3,0)
+2020-05-01 08:41:32 INFO  orderslogic:75 - Order created, to add items, please create orderlines at orderID: 3
+2020-05-01 08:41:32 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:41:34 INFO  orderline:20 - Order ID to add item to: 
+2020-05-01 08:41:41 INFO  orderline:22 - Product ID of item to add: 
+2020-05-01 08:41:44 INFO  orderline:24 - Quantity of item to add: 
+2020-05-01 08:41:45 INFO  orderlinelogic:84 - previous order total: 0.0
+2020-05-01 08:41:45 INFO  orderlinelogic:125 - Item added at orderline: 1, for order ID: 1
+2020-05-01 08:41:45 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:41:51 INFO  orderline:20 - Order ID to add item to: 
+2020-05-01 08:41:53 INFO  orderline:22 - Product ID of item to add: 
+2020-05-01 08:42:02 INFO  orderline:24 - Quantity of item to add: 
+2020-05-01 08:42:05 INFO  orderlinelogic:84 - previous order total: 0.0
+2020-05-01 08:42:05 INFO  orderlinelogic:125 - Item added at orderline: 2, for order ID: 2
+2020-05-01 08:42:05 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:42:08 INFO  orderline:20 - Order ID to add item to: 
+2020-05-01 08:42:10 INFO  orderline:22 - Product ID of item to add: 
+2020-05-01 08:42:15 INFO  orderline:24 - Quantity of item to add: 
+2020-05-01 08:42:19 INFO  orderlinelogic:84 - previous order total: 155.94
+2020-05-01 08:42:19 INFO  orderlinelogic:125 - Item added at orderline: 3, for order ID: 2
+2020-05-01 08:42:19 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:42:22 INFO  ims:37 - 
+Anything else (y/n)?
+2020-05-01 08:42:35 INFO  ims:37 - 
+Anything else (y/n)?
