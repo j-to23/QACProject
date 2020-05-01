@@ -6,7 +6,7 @@ public class utils {
 	public static final Scanner sc = new Scanner(System.in);
 	//Database constants
 	public static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-	public static final String MYSQL_URL = "10.76.64.3";
+	public static final String MYSQL_URL = "35.246.16.203";
 	public static final String DB_NAME = "invmsdb";
 	public static final String DB_URL = "jdbc:mysql://" + MYSQL_URL + "/" + DB_NAME + "?useSSL=false";
 	static String USER = "";
